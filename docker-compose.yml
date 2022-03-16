@@ -5,12 +5,12 @@ services:
     container_name: nestjs-mikro-orm-test-mysql
     environment:
       MYSQL_ROOT_PASSWORD: super-secret
-      MYSQL_DATABASE: shop
-      MYSQL_USER: shop
+      MYSQL_DATABASE: nestjs_mikro_orm_test
+      MYSQL_USER: nestjs_mikro_orm_test
       MYSQL_PASSWORD: secret
     ports:
       - '33071:3306'
-    networks: [nestjs-mikro-orm-test]
+    networks: [ nestjs-mikro-orm-test ]
 
 networks:
   nestjs-mikro-orm-test:
