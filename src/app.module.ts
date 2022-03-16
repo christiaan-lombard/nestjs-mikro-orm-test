@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
 import { Cat } from './entities/cat.entity';
+import { CatService } from './cat.service';
 @Module({
   imports: [
     MikroOrmModule.forRoot({
@@ -32,6 +33,6 @@ import { Cat } from './entities/cat.entity';
     MikroOrmModule.forFeature([Cat]),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, CatService],
 })
 export class AppModule {}

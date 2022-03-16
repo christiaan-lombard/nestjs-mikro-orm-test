@@ -2,9 +2,9 @@ import { EntityManager } from '@mikro-orm/mysql';
 import { ContextId, ContextIdFactory } from '@nestjs/core';
 import { REQUEST_CONTEXT_ID } from '@nestjs/core/router/request/request-constants';
 import { Test, TestingModule } from '@nestjs/testing';
-import { CatRepository } from './repositories/cat.repository';
 import { AppModule } from './app.module';
 import { Cat } from './entities/cat.entity';
+import { CatRepository } from './repositories/cat.repository';
 
 describe('AppModule', () => {
   let module: TestingModule;
